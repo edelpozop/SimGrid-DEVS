@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<!DOCTYPE platform
+  SYSTEM 'http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd'>
+<platform version="4.1">
+	<zone id="AS0" routing="Full">
+		<host id="manual" speed="40Gf"/>
+		<host id="toAutomatic" speed="40Gf"/>
+		<host id="greenLight" speed="40Gf"/>
+		<host id="yellowLight" speed="40Gf"/>
+		<host id="redLight" speed="40Gf"/>
+		<host id="toManual" speed="40Gf"/>
+		<host id="cont-0" speed="40Gf"/>
+		<host id="externalTransition" speed="40Gf"/>
+
+		<link id="toAutomatic-redLight" bandwidth="250MBps" latency="0us"/>
+		<link id="manual-toAutomatic" bandwidth="250MBps" latency="0us"/>
+		<link id="toManual-manual" bandwidth="250MBps" latency="0us"/>
+		<link id="yellowLight-redLight" bandwidth="250MBps" latency="0us"/>
+		<link id="greenLight-yellowLight" bandwidth="250MBps" latency="0us"/>
+		<link id="redLight-greenLight" bandwidth="250MBps" latency="0us"/>
+		<link id="greenLight-toManual" bandwidth="250MBps" latency="0us"/>
+		<link id="yellowLight-toManual" bandwidth="250MBps" latency="0us"/>
+		<link id="redLight-toManual" bandwidth="250MBps" latency="0us"/>
+		<link id="cont-manual" bandwidth="250MBps" latency="0us"/>
+		<link id="cont-toAutomatic" bandwidth="250MBps" latency="0us"/>
+		<link id="cont-greenLight" bandwidth="250MBps" latency="0us"/>
+		<link id="cont-yellowLight" bandwidth="250MBps" latency="0us"/>
+		<link id="cont-redLight" bandwidth="250MBps" latency="0us"/>
+		<link id="cont-toManual" bandwidth="250MBps" latency="0us"/>
+		<link id="externalTransition-greenLight" bandwidth="250MBps" latency="0us"/>
+		<link id="externalTransition-redLight" bandwidth="250MBps" latency="0us"/>
+		<link id="externalTransition-yellowLight" bandwidth="250MBps" latency="0us"/>
+
+		<route src="toAutomatic" dst="redLight">
+			<link_ctn id="toAutomatic-redLight"/>
+		</route>
+		
+		<route src="manual" dst="toAutomatic">
+			<link_ctn id="manual-toAutomatic"/>
+		</route>
+		
+		<route src="toManual" dst="manual">
+			<link_ctn id="toManual-manual"/>
+		</route>
+		
+		<route src="yellowLight" dst="redLight">
+			<link_ctn id="yellowLight-redLight"/>
+		</route>
+		
+		<route src="greenLight" dst="yellowLight">
+			<link_ctn id="greenLight-yellowLight"/>
+		</route>
+		<route src="redLight" dst="greenLight">
+			<link_ctn id="redLight-greenLight"/>
+		</route>
+		<route src="greenLight" dst="toManual">
+			<link_ctn id="greenLight-toManual"/>
+		</route>
+		<route src="yellowLight" dst="toManual">
+			<link_ctn id="yellowLight-toManual"/>
+		</route>
+		<route src="redLight" dst="toManual">
+			<link_ctn id="redLight-toManual"/>
+		</route>
+		<route src="cont-0" dst="manual">
+			<link_ctn id="cont-manual"/>
+		</route>
+		<route src="cont-0" dst="toAutomatic">
+			<link_ctn id="cont-toAutomatic"/>
+		</route>
+		<route src="cont-0" dst="greenLight">
+			<link_ctn id="cont-greenLight"/>
+		</route>
+		<route src="cont-0" dst="yellowLight">
+			<link_ctn id="cont-yellowLight"/>
+		</route>
+		<route src="cont-0" dst="redLight">
+			<link_ctn id="cont-redLight"/>
+		</route>
+		<route src="cont-0" dst="toManual">
+			<link_ctn id="cont-toManual"/>
+		</route>
+		<route src="externalTransition" dst="greenLight">
+			<link_ctn id="externalTransition-greenLight"/>
+		</route>
+		<route src="externalTransition" dst="yellowLight">
+			<link_ctn id="externalTransition-yellowLight"/>
+		</route>
+		<route src="externalTransition" dst="redLight">
+			<link_ctn id="externalTransition-redLight"/>
+		</route>
+	</zone>
+</platform>

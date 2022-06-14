@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE platform
+  SYSTEM 'http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd'>
+
+<platform version="4.1">
+  <zone id="AS0" routing="Full">
+
+    <host id="greenLight" speed="40Gf"/>
+    <host id="redLight" speed="40Gf"/>
+    <host id="yellowLight" speed="40Gf"/>
+    <host id="cont-0" speed="40Gf"/>
+
+    <link id="green-yellow" bandwidth="250MBps" latency="0us"/>
+    <link id="yellow-red" bandwidth="250MBps" latency="0us"/>
+    <link id="red-green" bandwidth="250MBps" latency="0us"/>
+
+    <link id="cont-yellow" bandwidth="250MBps" latency="0us"/>
+    <link id="cont-red" bandwidth="250MBps" latency="0us"/>
+    <link id="cont-green" bandwidth="250MBps" latency="0us"/>
+
+    <route src="greenLight" dst="yellowLight"><link_ctn id="green-yellow"/></route>
+    <route src="yellowLight" dst="redLight"><link_ctn id="yellow-red"/></route>
+    <route src="redLight" dst="greenLight"><link_ctn id="red-green"/></route>
+
+    <route src="cont-0" dst="yellowLight"><link_ctn id="cont-yellow"/></route>
+    <route src="cont-0" dst="redLight"><link_ctn id="cont-red"/></route>
+    <route src="cont-0" dst="greenLight"><link_ctn id="cont-green"/></route>
+  </zone>
+</platform>

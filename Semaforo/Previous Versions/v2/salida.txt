@@ -1,0 +1,194 @@
+Creando    redLight    
+Creando    greenLight    
+Creando    yellowLight    
+Creando    toManual    
+Creando    manual    
+Creando    toAutomatic    
+Creando    cont-0    
+[0;32mStart Green - Time: 0
+[1;33mStart Yellow - Time: 60
+[0;31m
+
+Start Red - Time: 65
+[0;32mStart Green - Time: 112
+[0mTurned off - Time: 172
+[0;31m
+
+Start Red - Time: 265
+[0mTurned off - Time: 312
+[0;31m
+
+Start Red - Time: 398
+[0;32mStart Green - Time: 445
+[0mTurned off - Time: 505
+[0;31m
+
+Start Red - Time: 526
+[0;32mStart Green - Time: 573
+[0mTurned off - Time: 633
+[0;31m
+
+Start Red - Time: 723
+[0;32mStart Green - Time: 770
+[1;33mStart Yellow - Time: 830
+[0mTurned off - Time: 835
+[0;31m
+
+Start Red - Time: 875
+[0mTurned off - Time: 922
+[0;31m
+
+Start Red - Time: 994
+[0mTurned off - Time: 1041
+[0;31m
+
+Start Red - Time: 1052
+[0;32mStart Green - Time: 1099
+[1;33mStart Yellow - Time: 1159
+[0mTurned off - Time: 1164
+[0;31m
+
+Start Red - Time: 1246
+[0mTurned off - Time: 1293
+[0;31m
+
+Start Red - Time: 1355
+[0mTurned off - Time: 1402
+[0;31m
+
+Start Red - Time: 1469
+[0mTurned off - Time: 1516
+[0;31m
+
+Start Red - Time: 1545
+[0mTurned off - Time: 1592
+[0;31m
+
+Start Red - Time: 1614
+[0;32mStart Green - Time: 1661
+[1;33mStart Yellow - Time: 1721
+[0;31m
+
+Start Red - Time: 1726
+[0;32mStart Green - Time: 1773
+[1;33mStart Yellow - Time: 1833
+[0mTurned off - Time: 1838
+[0;31m
+
+Start Red - Time: 1880
+[0mTurned off - Time: 1927
+[0;31m
+
+Start Red - Time: 2000
+[0mTurned off - Time: 2047
+[0;31m
+
+Start Red - Time: 2066
+[0;32mStart Green - Time: 2113
+[0mTurned off - Time: 2173
+[0;31m
+
+Start Red - Time: 2271
+[0mTurned off - Time: 2318
+[0;31m
+
+Start Red - Time: 2333
+[0;32mStart Green - Time: 2380
+[0mTurned off - Time: 2440
+[0;31m
+
+Start Red - Time: 2466
+[0;32mStart Green - Time: 2513
+[1;33mStart Yellow - Time: 2573
+[0;31m
+
+Start Red - Time: 2578
+[0;32mStart Green - Time: 2625
+[1;33mStart Yellow - Time: 2685
+[0;31m
+
+Start Red - Time: 2690
+[0;32mStart Green - Time: 2737
+[1;33mStart Yellow - Time: 2797
+[0mTurned off - Time: 2802
+[0;31m
+
+Start Red - Time: 2827
+[0;32mStart Green - Time: 2874
+[0mTurned off - Time: 2934
+[0;31m
+
+Start Red - Time: 2970
+[0mTurned off - Time: 3017
+[0;31m
+
+Start Red - Time: 3063
+[0mTurned off - Time: 3110
+[0;31m
+
+Start Red - Time: 3123
+[0;32mStart Green - Time: 3170
+[0mTurned off - Time: 3230
+[0;31m
+
+Start Red - Time: 3325
+[0;32mStart Green - Time: 3372
+[0mTurned off - Time: 3432
+[0;31m
+
+Start Red - Time: 3446
+[0;32mStart Green - Time: 3493
+[0mTurned off - Time: 3553
+[0;31m
+
+Start Red - Time: 3617
+[0mTurned off - Time: 3664
+[0;31m
+
+Start Red - Time: 3714
+[0;32mStart Green - Time: 3761
+[0mTurned off - Time: 3821
+[0;31m
+
+Start Red - Time: 3897
+[0;32mStart Green - Time: 3944
+[1;33mStart Yellow - Time: 4004
+[0;31m
+
+Start Red - Time: 4009
+[0mTurned off - Time: 4056
+[0;31m
+
+Start Red - Time: 4107
+[0;32mStart Green - Time: 4154
+[1;33mStart Yellow - Time: 4214
+[0mTurned off - Time: 4219
+[0;31m
+
+Start Red - Time: 4279
+[0;32mStart Green - Time: 4326
+[1;33mStart Yellow - Time: 4386
+[0mTurned off - Time: 4391
+[0;31m
+
+Start Red - Time: 4403
+[0mTurned off - Time: 4450
+[0;31m
+
+Start Red - Time: 4536
+[0;32mStart Green - Time: 4583
+[0mTurned off - Time: 4643
+[0;31m
+
+Start Red - Time: 4738
+[0;32mStart Green - Time: 4785
+[0mTurned off - Time: 4845
+[0;31m
+
+Start Red - Time: 4923
+[0;32mStart Green - Time: 4970
+[0m[0m[0mTurned off - Time: 5030
+[0m
+
+END TIME - 5030
+[0m[0m[0m

@@ -1,0 +1,166 @@
+{
+  "atomicType": {
+    "-xmlns": "http://www.saurabh-mittal.com/NewXMLSchema",
+    "-modelName": "trafficlights",
+    "-host": "localhost",
+    "states": {
+      "state": [
+        "manual",
+        "toAutomatic",
+        "greenLight",
+        "yellowLight",
+        "redLight",
+        "toManual"
+      ]
+    },
+    "TimeAdvance": {
+      "ta": [
+        {
+          "state": "manual",
+          "Timeout": "15.0"
+        },
+        {
+          "state": "toAutomatic",
+          "Timeout": "0.0"
+        },
+        {
+          "state": "greenLight",
+          "Timeout": "57.0"
+        },
+        {
+          "state": "yellowLight",
+          "Timeout": "3.0"
+        },
+        {
+          "state": "redLight",
+          "Timeout": "60.0"
+        },
+        {
+          "state": "toManual",
+          "Timeout": "0.0"
+        }
+      ]
+    },
+    "LamdaSet": {
+      "lamda": [
+        {
+          "state": "toAutomatic",
+          "outport": "outshow_red"
+        },
+        {
+          "state": "manual",
+          "outport": "outOn"
+        },
+        {
+          "state": "toManual",
+          "outport": "outOff"
+        },
+        {
+          "state": "yellowLight",
+          "outport": "outshow_red"
+        },
+        {
+          "state": "greenLight",
+          "outport": "outshow_yellow"
+        },
+        {
+          "state": "redLight",
+          "outport": "outshow_green"
+        },
+        {
+          "state": "toManual",
+          "outport": "outManual"
+        }
+      ]
+    },
+    "inports": { "inport": "intoManual" },
+    "outports": {
+      "outport": [
+        "outshow_red",
+        "outOn",
+        "outOff",
+        "outshow_red",
+        "outshow_yellow",
+        "outshow_green",
+        "outManual"
+      ]
+    },
+    "deltint": {
+      "InternalTransition": [
+        {
+          "-intTransitionID": "6",
+          "transition": {
+            "StartState": "toAutomatic",
+            "NextState": "redLight"
+          }
+        },
+        {
+          "-intTransitionID": "5",
+          "transition": {
+            "StartState": "manual",
+            "NextState": "toAutomatic"
+          }
+        },
+        {
+          "-intTransitionID": "4",
+          "transition": {
+            "StartState": "toManual",
+            "NextState": "manual"
+          }
+        },
+        {
+          "-intTransitionID": "3",
+          "transition": {
+            "StartState": "yellowLight",
+            "NextState": "redLight"
+          }
+        },
+        {
+          "-intTransitionID": "2",
+          "transition": {
+            "StartState": "greenLight",
+            "NextState": "yellowLight"
+          }
+        },
+        {
+          "-intTransitionID": "1",
+          "transition": {
+            "StartState": "redLight",
+            "NextState": "greenLight"
+          }
+        }
+      ]
+    },
+    "deltext": {
+      "ExternalTransition": [
+        {
+          "-extTransitionID": "3",
+          "IncomingMessage": "toManual",
+          "transition": {
+            "StartState": "greenLight",
+            "NextState": "toManual"
+          },
+          "scheduleIndicator": "true"
+        },
+        {
+          "-extTransitionID": "2",
+          "IncomingMessage": "toManual",
+          "transition": {
+            "StartState": "yellowLight",
+            "NextState": "toManual"
+          },
+          "scheduleIndicator": "true"
+        },
+        {
+          "-extTransitionID": "1",
+          "IncomingMessage": "toManual",
+          "transition": {
+            "StartState": "redLight",
+            "NextState": "toManual"
+          },
+          "scheduleIndicator": "true"
+        }
+      ]
+    }
+  }
+}

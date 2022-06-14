@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE platform
+  SYSTEM 'http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd'>
+
+<platform version="4.1">
+  <zone id="AS0" routing="None">
+
+    <host id="greenLight" speed="40Gf"/>
+    <host id="redLight" speed="40Gf"/>
+    <host id="yellowLight" speed="40Gf"/>
+
+    <host id="finalizer" speed="40Gf"/>
+  </zone>
+</platform>
